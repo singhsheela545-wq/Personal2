@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>13 Months With You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+  <source src="music.mpeg" type="audio/mpeg">
+</audio>
+
+
+<!-- Falling Hearts -->
+<div id="hearts"></div>
+
+<!-- SCREEN 1 : TIMER -->
+<div class="screen" id="screen1">
+  <h1>💞 13 Months of Love 💞</h1>
+  <p>With you, Keshu ❤️</p>
+
+  <div class="timer">
+    <p>⏳ Counting every second till our special day</p>
+    <h2 id="countdown"></h2>
+  </div>
+
+  <button onclick="next()">Continue 🫂</button>
+</div>
+
+<!-- SCREEN 2 -->
+<div class="screen hidden" id="screen2">
+  <h1>🎉 Happy 13th Month Anniversary 🎉</h1>
+  <p>You are my comfort, my home 🧿</p>
+  <button onclick="showPhotos()">See Our Memories 📸</button>
+</div>
+
+<!-- PHOTOS -->
+<div class="screen hidden" id="photosScreen">
+  <h1>📸 Our Beautiful Memories ❤️</h1>
+
+  <div class="slideshow">
+    <img id="slide" src="photos/1.jpeg">
+  </div>
+
+  <button onclick="openLetter()">Read My Heart 💌</button>
+</div>
+
+<!-- LETTER -->
+<div class="screen hidden" id="screen3">
+  <div class="letter">
+    <h2>💌 Happy 13th Month Anniversary Meri Jaan Keshu ❤️🧿</h2>
+
+    <p>
+      Happy 13th Month Anniversary Meri jaan Keshu..❤️🧿🫂🥺  
+      <br><br>
+      Like yeah… it’s more than one year of being together —  
+      love, joy, happiness… and little bit of kalesh also 😅  
+      (jis main sari meri galti thi).
+      <br><br>
+      It’s that first month of second year…  
+      and it started with full of joy and happiness.
+      <br><br>
+      Your anniversary message…  
+      wo guitar wali singing wali video 🎸  
+      cake wala moment 🎂  
+      itna special feel karaya jitna main deserve bhi nahi karta tha.
+      <br><br>
+      Wo saree wali video call…  
+      photos and videos…  
+      honestly, they are the best 🥺❤️
+      <br><br>
+      Hum 12 baje call par the…  
+      uske baad bhi maine kalesh kar liya  
+      Rahul wali baat ko lekar —  
+      meri hi galti thi.
+      <br><br>
+      Tumne mujhe itna pyaar se samjhaya…  
+      aur maine kuch cheezein galat bol di —  
+      uske liye really sorry meri jaan 🥺🫂
+      <br><br>
+      Uske baad sab kuch bahut acha chala…  
+      tumhari obsession peak par thi ❤️  
+      calls, chats, reels, VC…
+      <br><br>
+      Bed wali VC…  
+      pehle tum comfortable nahi thi…  
+      ab ho gayi ho —  
+      aur jab tum aise comfortable hoti ho na,  
+      dil bahut khush hota hai 🥺🤍
+      <br><br>
+      Subah wali VC…  
+      tum jis tarah dikhti thi…  
+      bhaisahab 😭❤️
+      <br><br>
+      Raat ko call par sona…  
+      tumhari breathing ki sound…  
+      background ki awaaz…  
+      aisa lagta hai jaise main tumhare saath hi hoon.
+      <br><br>
+      Tum sochti thi main bore ho jaunga…  
+      lekin sach bolun —  
+      main tumse kabhi bore nahi ho sakta.
+      <br><br>
+      Is month tumne bahut pyaar diya ❤️  
+      11:11 videos, normal videos,  
+      har cheez par reaction…
+      <br><br>
+      15th wale paragraph ka reply 🥺🤌🏻  
+      aur us din ka video —  
+      bahut hi special tha.
+      <br><br>
+      Phir ek aur kalesh…  
+      tum mazaak kar rahi thi…  
+      main galat samajh liya —  
+      sorry yaar, thoda bewakoof hoon main.
+      <br><br>
+      Tumne phir bhi mujhe maaf kar diya…  
+      bas ek request hai meri jaan —  
+      gussa ho tab bhi call uthana band mat kiya karo 🫂
+      <br><br>
+      Sit-ups ke baad jab meri breathing zyada ho rahi thi…  
+      tumne voice notes bhej bhej kar sambhala…  
+      thank you so much Keshu ❤️
+      <br><br>
+      Leg injury ke time tumne jo care kiya…  
+      uske liye bhi thank you meri jaan 🥺
+      <br><br>
+      Main sach mein blessed hoon  
+      kyunki mere saath duniya ki  
+      sabse beautiful, caring aur best ladki hai —  
+      sirf duniya mein nahi, poore universe mein ❤️🧿
+      <br><br>
+      Library join karna… baatein kam ho gayi…  
+      phir bhi daily updates, calls —  
+      thank you so much meri jaan 🫂
+      <br><br>
+      Main tumhe har second miss karta hoon…  
+      har microsecond…  
+      par tumhari padhai sabse important hai.
+      <br><br>
+      Jab tum kehti ho tumhara din acha gaya,  
+      mujhe sabse zyada khushi hoti hai ❤️
+      <br><br>
+      Tum insecure hoti ho na  
+      ki main chhod na doon…  
+      sun lo meri jaan —
+      <br><br>
+      <strong>
+      Kuch bhi ho jaye,  
+      main kahin nahi ja raha.  
+      Hamesha tumhara hoon  
+      aur shaadi bhi tumse hi karunga ❤️
+      </strong>
+      <br><br>
+      Once again…  
+      <strong>Happy 13th Month Anniversary Keshu ❤️🥺🫂🧿</strong>
+      <br><br>
+      Thank you for everything…  
+      sorry for every mistake…  
+      and I love you so so much meri jaan ❤️
+    </p>
+  </div>
+</div>
+
+<script src="tcript.js"></script>
+</body>
+</html>
